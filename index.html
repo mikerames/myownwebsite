@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MGR</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+            <i class="fa fa-bars" style="color: black"></i>
+        </a>
+        <ul>
+            <i class="fa fa-home" id="home" style="font-size: 15px; float: left"></i>
+            <li id="about-section">About</li>
+            <li id="gradu-section">Graduation</li>
+            <li id="portfolio-section">Portfolio</li>
+        </ul>
+    </div>
+
+    <div class="row about">
+        <div class="main">
+            <h2 style="color: black">ABOUT <i class="fa fa-address-card" style="float: right"></i></h2>
+            <hr>
+            <div class="column-about">
+                <p>
+                    Graduated in management and post graduated in IT. I've started working in 2007 as an accountant and auditor and then in 2013 did a shift in my career to IT for banking services. </br>
+                    I'm creative, adventurer, self determined, geek, action sports lover.</br>
+                    This is my personal website made to apply my webdeveloping knowledge and also to share moments i love most.</br>        
+                </p>
+            </div>
+            <div class="column-about">                   
+                <p>
+                    Since little that i felt in love with bikes and then bodyboarding. Started riding bicycle as everyone else, but whenever i had 
+                    the opportunity to ride a motorcycle, i would grab it.</br>
+                    Bodyboarding was in fact where i spent most of my free time. The number of hours i spent in the ocean is a lot.
+                </p>
+            </div>
+            <div class="column-about">
+                <p>
+                    The adrenaline is something that everyone should taste.</br>
+                    Shouldn't free any space to sadness, discussions, stress,... Energy shouldn't be wasted in useless emotions. </br>
+                    Life should be lived in its fullest. Spare your life with the ones you love most.            
+                </p>
+            </div>
+        </div>
+        <!-- <div class="main-phrase">
+            <p>"Life should be lived in its fullest..."</p>
+        </div> -->
+    </div>
+
+    <div class="row gradu">
+        <div class="main">
+            <h2 style="color: black">CAREER <i class="fa fa-briefcase" style="float: right"></i></h2>
+            <hr>
+            <div class="row">
+                <div class="column-gradu">
+                    <h3>SANTANDER  || Novabase  (1 yr)</h3>
+                    <p>IT Consultant</p>
+                    <br/>
+                    <h3>BNP PARIBAS  || Syone  (5 yrs)</h3>
+                    <p>IT Consultant</p>
+                    <br/>
+                    <h3>Auditoc  (4 yrs)</h3>
+                    <p>Accountant doing several tasks</p>
+                    <br/>
+                    <h3>Lampreia&Viçoso (1,5 yrs)</h3>
+                    <p>Auditor trainee</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row gradu">
+        <div class="main">
+            <h2 style="color: black">GRADUATION <i class="fa fa-graduation-cap" style="float: right"></i></h2>
+            <hr>
+            <div class="row">
+                <div class="column-gradu">
+                    <p><i class="fa fa-calendar fa-fw"></i>  2013</p>
+                    <h3><i class="fa fa-university"></i>  Universidade Nova IMS </h3>
+                    <p><i class="fa fa-book"></i>  Information Communication Technologies</p>
+                </div>
+                <div class="column-gradu">
+                    <p><i class="fa fa-calendar fa-fw"></i>  2002-2006</p>
+                    <h3><i class="fa fa-university"></i>  ISLA</h3>
+                    <p><i class="fa fa-book"></i>  Enterprise Management</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-gradu">
+                    <p><i class="fa fa-calendar fa-fw"></i>  2002</p>
+                    <h3>  Salesianos do Estoril</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row gallery">
+        <div class="main">
+            <h2 style="color: black">GALLERY <i class="fa fa-camera" style="float: right"></i></h2>
+            <hr>
+            <div class="myBtnFilter" id="myBtnContainer" style="float: right; width: 100%"></div>
+            <div class="row portfolio"></div>
+        </div>
+    </div>
+    
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="container">
+                <img id="expandedImg">
+                <div id="imgtext"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            <i class="fa fa-instagram" alt="https://www.instagram.com/miguelramos222/" style="font-size:24px" onclick="btnSocialMedia(this)"></i>
+            <i class="fa fa-linkedin-square" style="font-size:24px" onclick="btnSocialMedia(this)"></i>
+            <i class="fa fa-youtube-play" style="font-size:24px" onclick="btnSocialMedia(this)"></i>
+            <i class="fa fa-envelope" alt="mailto:miguel.ramos@msn.com" style="font-size:24px" onclick="btnSocialMedia(this)"></i>
+        </p>
+    </br>
+        <p>
+            All rights reserved @ 2019
+        </p>
+    </div>
+
+<script>
+    function expandMenu() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+                }
+
+    ////////// INDEX
+
+    let btnn;
+    // social media buttons
+    function btnSocialMedia(btn) {
+        window.open(btn.getAttribute("alt"));
+    }
+
+    // bodyboards thumbnails
+    function updateThisView(img) {
+        document.getElementById("bb-main-img").src = img.src;
+        document.getElementById("tst").innerText = img.alt;
+    }
+
+
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When photo clicked it opens the modal with it expanded
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+        expandImg.style.maxWidth = "100%";
+        expandImg.style.height = "auto";
+        expandImg.style.opacity = "1";
+        modal.style.display = "block";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        const key = event.key; // Or const {key} = event; in ES6+
+        if (key === "Escape") {
+            if(modal.style.display != "none") {
+                modal.style.display = "none";
+            }
+        }
+    });
+
+
+
+    $(document).ready(function() {
+        // Configure/customize these variables.
+        var showChar = 1700;  // How many characters are shown by default
+        var ellipsestext = "...";
+        var moretext = "Show more >";
+        var lesstext = "Show less";
+
+
+        $('.more').each(function() {
+            var content = $(this).html();
+
+            if(content.length > showChar) { 
+                var c = content.substr(0, showChar);
+                var h = content.substr(showChar, content.length - showChar); 
+                var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>'; 
+                $(this).html(html);
+            }
+
+        });
+
+        $(".morelink").click(function(){
+            if($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+            $(this).parent().prev().toggle();
+            $(this).prev().toggle();
+            return false;
+        });
+    });
+
+
+</script>
+
+</body>
+</html>

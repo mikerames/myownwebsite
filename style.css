@@ -1,0 +1,532 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font: normal normal normal 14px/1 FontAwesome;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.topnav {
+  padding: 20px 12% 10px 12%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  word-spacing: 15px;
+  width: 100%;
+  background-color: white;
+}
+ 
+.topnav ul {
+  display: block;
+  color: black;
+  text-decoration: none;    
+  z-index: 1;
+  top: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  word-spacing: 15px;
+}
+  
+.topnav .icon {
+  display: none;
+}
+
+.fa {
+  margin: 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.parallax { 
+  background-image: url("mx_1-bw.jpg");
+  height: 660px; 
+  margin-top: 10px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  margin: auto;
+}
+
+.parallax-small { 
+  background-image: url("mx_1-bw.jpg");
+  height: 350px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  margin: auto;
+}
+
+.parallax-small-1 { 
+  background-image: url("motocross.jpg");
+  height: 350px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  margin: auto;
+}
+
+.parallax-small-2 { 
+  background-image: url("https://instagram.flis6-1.fna.fbcdn.net/vp/e086d8a31678bbcc0e331dbaa35f19b5/5DDB9571/t51.2885-15/e35/47694810_2188316464763904_5997813145028808381_n.jpg?_nc_ht=instagram.flis6-1.fna.fbcdn.net");
+  height: 350px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  margin: auto;
+}
+
+.row {
+  margin: 10px 0px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 2px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+    font-family: "Lucida Console", Monaco, monospace;
+    letter-spacing: 1px;
+}
+
+.main {
+  max-width: 1000px;
+  min-height: 400px;
+  margin: auto;
+}
+
+.main-phrase {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main-phrase p {
+  font-family: 'Brush Script MT', Brush Script Std, cursive; 
+  font-size: 40px; 
+  font-style: italic;
+  text-align: center;
+}
+
+.column-about {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.column-about p {
+  color: black;
+  text-align: justify;    
+  font-family: 'Varela'; font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+
+
+
+
+.column-gradu {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column-gradu i {
+font-size: 25px;
+}
+
+.column-gradu b {
+  float:center;
+  font-size: 18px;
+}
+
+.column-gradu img {
+  width: 50px; 
+  height: 50px;
+}
+
+.column-gradu p {
+  color: black;
+  text-align: justify;    
+  font-family: 'Varela'; font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+.column-games {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column-games b {
+  float:right
+}
+
+.column-games img {
+  width: 70px; 
+  height: 70px;
+}
+
+.column-games p {
+  color: black;
+  text-align: justify;    
+  font-family: 'Varela'; font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.column-bodyboard {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column-bodyboard p {
+  color: black;
+  text-align: justify;    
+  font-family: 'Varela'; font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.column-bodyboard img {
+  width: 200px;
+  height: 190px;
+}
+
+.column-rides {
+  float: left;
+  width: 16%;
+  padding: 10px;
+}
+
+.column-rides img {
+  width: 100px;
+  height: 100px;
+}
+
+.column-rides p {
+  color: black;
+  text-align: justify;    
+  font-family: 'Varela'; font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.gallery {
+  min-height: 600px;
+}
+
+/* PORTFOLIO SECTION */
+/* Create three equal columns that floats next to each other */
+.column-portf {
+  float: left;
+  width: 16%;
+  display: none; /* Hide all elements by default */
+  padding: 10px;
+}
+
+.column-portf img {
+  height: 150px;
+  width: 130px;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  margin: auto;
+}
+
+.footer p {
+  text-align: center;
+  color: black;
+  font-family: 'Varela'; font-size: 9px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+li {
+  display: inline;
+}
+
+li:hover {
+    cursor: pointer;
+  }
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: max-content;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    text-align: center;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  
+
+
+
+img:hover {
+    opacity: 0.9;
+    cursor: pointer;    
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    font-size: 150%;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .box:nth-child(even) {
+    background-color: #ccc;
+    color: #000;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .wrapper {
+    /* width: 250px; */
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(0, 100px);
+    grid-template-rows: 60px 60px 60px;
+    grid-auto-flow: column;
+  }
+  
+
+
+
+  
+  
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+ 
+
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: black;
+    color: white;
+  }
+
+
+
+    /* .flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  } */
+
+
+/*
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}*/
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+  
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Show More */
+.morecontent span {
+  display: none;
+}
+.morelink {
+  display: block;
+}

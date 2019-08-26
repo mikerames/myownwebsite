@@ -1,0 +1,119 @@
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media handheld, only screen and (max-width: 767px) {
+
+    body {
+        margin: 0px;
+    }
+
+    #home {
+        display: none;
+    }
+
+
+    .topnav {
+        width: 100%;
+        margin: auto;
+    }
+
+    .topnav ul {
+        display: none;
+        margin: auto;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav.responsive {
+        position: fixed; 
+    }
+
+    .topnav.responsive ul {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 125px;
+        padding-top: 25px;
+        background-color: white;
+        line-height: 1.7rem;
+    }
+
+    .topnav.responsive ul li:hover {
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+
+
+    .parallax { 
+        background-image: url("https://instagram.flis6-1.fna.fbcdn.net/vp/d55f31a85d393afb1bdeeb37d445e271/5DE85EC5/t51.2885-15/e35/67497029_369278317090112_1185095700818959817_n.jpg?_nc_ht=instagram.flis6-1.fna.fbcdn.net");
+        height: 660px !important; 
+        width: 100% !important; 
+        background-attachment: fixed !important; 
+        background-position: center !important; 
+        background-repeat: no-repeat !important; 
+        background-size: cover !important; 
+        width: 100%;
+    }
+
+    .parallax-small { 
+        background-image: url("mx_1-bw.jpg");
+        width: 100%;
+        margin: auto;
+      }
+      
+      .parallax-small-1 { 
+        width: 100%;
+        margin: auto;
+      }
+      
+      .parallax-small-2 { 
+        width: 100%;
+        margin: auto;
+      }
+
+    .column-about {
+        width: 100%;
+    }
+
+   .column-gradu {
+        width: 100%;
+   }
+
+   .column-games {
+        width: 100%;
+    }
+
+    .column-bodyboard {
+        width: 100%;
+    }
+
+    .column-rides {
+        width: 100%;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    .column-portf {
+        width: 33.33%;
+        padding: 3px;
+    }
+
+    .column-portf img {
+        height: 100px;
+        width: 100px;
+      }
+
+      #expandedImg {
+        width: 350px;
+      }
+
+      .modal {
+          padding: 10px;
+      }
+
+}
+  
